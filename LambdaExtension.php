@@ -78,7 +78,7 @@ class LambdaExtension extends \Twig_Extension
             new \Twig_SimpleFilter('count_by', '\DPolac\TwigLambda\LambdaExtension::countBy'),
 
 			new \Twig_SimpleFilter('is_every', '\DPolac\TwigLambda\LambdaExtension::every'),
-			new \Twig_SimpleFilter('is_any', '\DPolac\TwigLambda\LambdaExtension::every'),
+			new \Twig_SimpleFilter('is_any', '\DPolac\TwigLambda\LambdaExtension::any'),
         ];
     }
 
