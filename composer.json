@@ -1,5 +1,5 @@
 {
-    "name": "leonaero/twig-lambda",
+    "name": "dpolac/twig-lambda",
     "type": "library",
     "description": "Lambda expressions for Twig and filters that make use of them",
     "keywords": [
