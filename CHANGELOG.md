@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Deprecated
 - `|map`, `|filter` and `|sort_by` twig filters
 - `is any` and `is every` twig test
-- `=>`, `==>`, `;` twig operator
+- `=>`, `;` twig operator
 
 [1.1.0]: https://github.com/leonaero/twig-lambda/compare/v1.0.0...v1.1.0
 
