@@ -61,8 +61,8 @@ class LambdaExtension extends AbstractExtension
         return $result;
     }
 
-    public function group_by($array, $arrow)
-    {
+    public function group_by($array, $arrow): Dictionary
+	{
         if (!is_callable($arrow)) {
             throw new RuntimeError(sprintf(
                 'Second argument of "group_by" must be callable, but is "%s".', gettype($arrow)));
@@ -89,8 +89,8 @@ class LambdaExtension extends AbstractExtension
         return $results;
     }
 
-    public function count_by($array, $arrow)
-    {
+    public function count_by($array, $arrow): array
+	{
         if (!is_callable($arrow)) {
             throw new RuntimeError(sprintf(
                 'Second argument of "count_by" must be callable, but is "%s".', gettype($arrow)));
@@ -160,8 +160,8 @@ class LambdaExtension extends AbstractExtension
         return false;
     }
 
-    public function getName()
-    {
+    public function getName(): string
+	{
         return 'leonaero_lambda_extension';
     }
 }

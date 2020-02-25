@@ -9,11 +9,11 @@
         "group",
         "extensions"
     ],
-    "minimum-stability": "dev",
+    "prefer-stable": true,
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
-        "twig/twig": "^2.10",
+        "twig/twig": "^3.0",
         "dpolac/dictionary": "^1.0"
     },
     "require-dev": {
