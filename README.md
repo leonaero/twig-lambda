@@ -11,9 +11,16 @@
 <a name="examples"></a>
 ## Quick examples
 
-Listing names of all authors ordered by age:
+Listing names of all authors ordered by youngest:
 ```twig
-{% for author in articles|map(v => v.author)|unique_by('===')|sort_by(v => v.age) %}
+{% set articles = [
+	{author: {name: 'Bar', age: 55}, text: 'Text...'},
+	{author: {name: 'Bar', age: 65}, text: 'Text...'},
+	{author: {name: 'Foo', age: 45}, text: 'Text...'},
+	{author: {name: 'Foo', age: 45}, text: 'Text...'},
+] %}
+
+{% for author in articles|map(v => v.author)|unique_by('===')|sort(v => v.age)|reverse %}
     * {{ author.name }}, {{ author.age }}
 {% endfor %}
 ```
