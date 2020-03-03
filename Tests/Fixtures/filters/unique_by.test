@@ -1,0 +1,18 @@
+--TEST--
+"unique_by" filter
+--TEMPLATE--
+{% set articles = [
+	{author: {name: 'Bar', age: 55}, text: 'Text...'},
+	{author: {name: 'Bar', age: 65}, text: 'Text...'},
+	{author: {name: 'Foo', age: 45}, text: 'Text...'},
+	{author: {name: 'Foo', age: 45}, text: 'Text...'},
+] %}
+{% for author in articles|map(v => v.author)|unique_by('===')|sort(v => v.age)|reverse %}
+    * {{ author.name }}, {{ author.age }}
+{% endfor %}
+--DATA--
+return [];
+--EXPECT--
+    * Bar, 55
+    * Foo, 45
+    * Bar, 65
