@@ -2,7 +2,6 @@
 
 namespace LeonAero\TwigLambda;
 
-use DPolac\Dictionary;
 use Twig\Error\RuntimeError;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;

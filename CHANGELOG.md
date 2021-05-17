@@ -4,7 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
-## [3.0.0] - 2020-02-
+## [4.0.0]
+### Changed
+- minimum php version is now 8.0
+
+## [3.0.0] - 2020-03-03
 ### Changed
 - minimum php version is now 7.2
 ### Removed
@@ -42,6 +46,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - `is any` and `is every` twig test
 - `=>`, `;` twig operator
 
+[4.0.0]: https://github.com/leonaero/twig-lambda/compare/v4.0.0...v3.0.0
 [3.0.0]: https://github.com/leonaero/twig-lambda/compare/v3.0.0...v2.1.0
 [2.1.0]: https://github.com/leonaero/twig-lambda/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/leonaero/twig-lambda/compare/v1.1.0...v2.0.0
